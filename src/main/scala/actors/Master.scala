@@ -17,8 +17,8 @@ class Master extends Actor {
       println("MASTER: Dispatching task #" + taskNb)
       router ! Work(taskNb)
     }
-    case WorkCompleted(taskNb, time) => {
-      println("MASTER: Task #" + taskNb + " completed in " + time + " ms")
+    case WorkCompleted(getIdentifier, taskNb, time) => {
+      println("MASTER: Worker #" + getIdentifier + " completed task #" + taskNb + " in " + time + " ms")
     }
     case _ => Unit // Do nothing
   }
