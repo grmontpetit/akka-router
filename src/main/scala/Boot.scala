@@ -1,5 +1,3 @@
-// Copyright (C) 2016 Inocybe Technologies inc.
-
 package com.inocybe.distributionmanager
 
 import actors.{Dispatch, Master}
