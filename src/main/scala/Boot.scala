@@ -1,4 +1,4 @@
-package com.inocybe.distributionmanager
+package com.sniggel.akkarouter
 
 import actors.{Dispatch, Master}
 import akka.actor.{Props, ActorSystem}

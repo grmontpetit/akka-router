@@ -1,4 +1,4 @@
-package actors
+package com.sniggel.akkarouter.actors
 
 sealed trait Message
 
